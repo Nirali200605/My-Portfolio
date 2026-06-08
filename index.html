@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nirali Chipad — Aspiring Software Development Engineer. Portfolio showcasing projects, skills, and achievements.">
+  <meta name="author" content="Nirali Chipad">
+  <title>Nirali Chipad | Software Development Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<body>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="nav__logo">
+  <img src="PROFILE.jpeg" alt="Nirali Chipad">
+  <span>Nirali Chipad</span>
+</a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#home" class="nav__link active">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#education" class="nav__link">Education</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#achievements" class="nav__link">Achievements</a></li>
+        <li><a href="#profiles" class="nav__link">Profiles</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero section" id="home">
+      <div class="hero__bg">
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__grid"></div>
+      </div>
+      <div class="container hero__container">
+        <div class="hero__content reveal">
+          <p class="hero__greeting">Hello, I'm</p>
+          <h1 class="hero__name">Nirali Chipad</h1>
+          <h2 class="hero__title">Aspiring Software Development Engineer</h2>
+          <p class="hero__tagline">
+            <span id="typingText"></span><span class="hero__cursor">|</span>
+          </p>
+          <div class="hero__buttons">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="NiraliChipad.pdf" class="btn btn--outline" download>Download Resume</a>
+          </div>
+          <div class="hero__social">
+            <a href="https://github.com/Nirali200605" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/nirali-chipad" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.126 0 2.065 2.065 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://leetcode.com/Nirali20" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="LeetCode">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662L2.856 12.74l.699-.685c.391-.39 1.024-.39 1.414 0l2.47 2.47 2.47-2.47c.391-.39 1.024-.39 1.414 0l.699.685-3.923 3.893zm3.79-10.607l-1.414 1.415-2.47-2.47-2.47 2.47-1.414-1.414 2.47-2.47-2.47-2.47 1.414-1.414 2.47 2.47 2.47-2.47 1.414 1.414-2.47 2.47 2.47 2.47z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero__visual reveal reveal--delay">
+          <div class="hero__code-card glass">
+            <div class="hero__code-header">
+              <span class="hero__code-dot hero__code-dot--red"></span>
+              <span class="hero__code-dot hero__code-dot--yellow"></span>
+              <span class="hero__code-dot hero__code-dot--green"></span>
+              <span class="hero__code-filename">developer.js</span>
+            </div>
+            <pre class="hero__code-body"><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"Nirali Chipad"</span>,
+  <span class="code-prop">role</span>: <span class="code-string">"SDE"</span>,
+  <span class="code-prop">skills</span>: [<span class="code-string">"React"</span>, <span class="code-string">"Node.js"</span>, <span class="code-string">"DSA"</span>],
+  <span class="code-prop">passion</span>: <span class="code-string">"Building scalable apps"</span>,
+  <span class="code-prop">available</span>: <span class="code-bool">true</span>
+};</code></pre>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll down">
+        <span class="hero__scroll-text">Scroll</span>
+        <span class="hero__scroll-icon"></span>
+      </a>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Get to know me</span>
+          <h2 class="section__title">About Me</h2>
+          <div class="section__line"></div>
+        </div>
+        <div class="about__grid">
+          <div class="about__image reveal">
+            <div class="about__image-wrapper glass">
+              <div class="about__avatar">
+    <img src="PROFILE.jpeg" alt="Nirali Chipad">
+</div>
+              <div class="about__stats">
+                <div class="about__stat">
+                  <span class="about__stat-number" data-count="250">0</span>+
+                  <span class="about__stat-label">DSA Problems</span>
+                </div>
+                <div class="about__stat">
+                  <span class="about__stat-number" data-count="3">0</span>
+                  <span class="about__stat-label">Projects</span>
+                </div>
+                <div class="about__stat">
+                  <span class="about__stat-number" data-count="9" data-decimal=".13">0</span>
+                  <span class="about__stat-label">SGPA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about__content reveal reveal--delay">
+            <p class="about__text">
+              I am a <strong>B.Tech Information Technology</strong> student at <strong>SKIT Jaipur</strong>. I am passionate about software development, web technologies, and data structures &amp; algorithms. I enjoy building full-stack applications and continuously improving my problem-solving skills.
+            </p>
+            <div class="about__highlights">
+              <div class="about__highlight glass">
+                <div class="about__highlight-icon">🎯</div>
+                <div>
+                  <h3>Problem Solver</h3>
+                  <p>250+ DSA problems solved across LeetCode &amp; GFG</p>
+                </div>
+              </div>
+              <div class="about__highlight glass">
+                <div class="about__highlight-icon">💻</div>
+                <div>
+                  <h3>Full-Stack Developer</h3>
+                  <p>MERN stack applications with REST API integration</p>
+                </div>
+              </div>
+              <div class="about__highlight glass">
+                <div class="about__highlight-icon">🏆</div>
+                <div>
+                  <h3>GATE Qualified</h3>
+                  <p>Qualified GATE 2026 (CS &amp; IT)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="education section" id="education">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Academic Journey</span>
+          <h2 class="section__title">Education</h2>
+          <div class="section__line"></div>
+        </div>
+        <div class="timeline">
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card glass">
+              <span class="timeline__date">2023 – 2027</span>
+              <h3 class="timeline__title">B.Tech Information Technology</h3>
+              <p class="timeline__institution">SKIT Jaipur</p>
+              <span class="timeline__badge timeline__badge--accent">SGPA: 9.13</span>
+            </div>
+          </div>
+          <div class="timeline__item reveal reveal--delay">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card glass">
+              <span class="timeline__date">Class XII</span>
+              <h3 class="timeline__title">Senior Secondary</h3>
+              <p class="timeline__institution">RBSE</p>
+              <span class="timeline__badge">91.60%</span>
+            </div>
+          </div>
+          <div class="timeline__item reveal reveal--delay-2">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card glass">
+              <span class="timeline__date">Class X</span>
+              <h3 class="timeline__title">Secondary School</h3>
+              <p class="timeline__institution">RBSE</p>
+              <span class="timeline__badge">93.33%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">What I work with</span>
+          <h2 class="section__title">Skills</h2>
+          <div class="section__line"></div>
+        </div>
+        <div class="skills__grid">
+          <div class="skills__category reveal">
+            <div class="skills__category-header">
+              <span class="skills__category-icon">⚡</span>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skills__badges">
+              <span class="skill-badge">C++</span>
+              <span class="skill-badge">C</span>
+              <span class="skill-badge">Python</span>
+              <span class="skill-badge">JavaScript</span>
+            </div>
+          </div>
+          <div class="skills__category reveal reveal--delay">
+            <div class="skills__category-header">
+              <span class="skills__category-icon">🎨</span>
+              <h3>Frontend</h3>
+            </div>
+            <div class="skills__badges">
+              <span class="skill-badge">HTML</span>
+              <span class="skill-badge">CSS</span>
+              <span class="skill-badge">React.js</span>
+            </div>
+          </div>
+          <div class="skills__category reveal reveal--delay">
+            <div class="skills__category-header">
+              <span class="skills__category-icon">⚙️</span>
+              <h3>Backend</h3>
+            </div>
+            <div class="skills__badges">
+              <span class="skill-badge">Node.js</span>
+              <span class="skill-badge">Express.js</span>
+            </div>
+          </div>
+          <div class="skills__category reveal reveal--delay-2">
+            <div class="skills__category-header">
+              <span class="skills__category-icon">🗄️</span>
+              <h3>Database</h3>
+            </div>
+            <div class="skills__badges">
+              <span class="skill-badge">MongoDB</span>
+              <span class="skill-badge">SQL</span>
+            </div>
+          </div>
+          <div class="skills__category reveal reveal--delay-2">
+            <div class="skills__category-header">
+              <span class="skills__category-icon">🛠️</span>
+              <h3>Tools</h3>
+            </div>
+            <div class="skills__badges">
+              <span class="skill-badge">Git</span>
+              <span class="skill-badge">GitHub</span>
+              <span class="skill-badge">Postman</span>
+            </div>
+          </div>
+          <div class="skills__category reveal reveal--delay-3">
+            <div class="skills__category-header">
+              <span class="skills__category-icon">📚</span>
+              <h3>Core Subjects</h3>
+            </div>
+            <div class="skills__badges">
+              <span class="skill-badge">OOPs</span>
+              <span class="skill-badge">DBMS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="experience section" id="experience">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Professional Journey</span>
+          <h2 class="section__title">Experience</h2>
+          <div class="section__line"></div>
+        </div>
+
+        <div class="experience__card glass reveal reveal--delay">
+  <div class="experience__header">
+    <div class="experience__icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" width="28" height="28">
+        <rect x="2" y="7" width="20" height="14" rx="2"/>
+        <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/>
+      </svg>
+    </div>
+
+    <div>
+      <h3 class="experience__role">
+        Full Stack Development Intern
+      </h3>
+
+      <p class="experience__company">
+        Playtown Studios Pvt. Ltd.
+      </p>
+    </div>
+
+    <span class="experience__duration">
+      June 2025 – July 2025
+    </span>
+  </div>
+
+  <p class="experience__description">
+    Completed a 45-day Full Stack Development internship focused on the MERN Stack. Built responsive web applications, worked with REST APIs, implemented frontend and backend features, and gained practical experience in full-stack development workflows.
+  </p>
+
+  <div class="experience__tags">
+    <span class="experience__tag">MongoDB</span>
+    <span class="experience__tag">Express.js</span>
+    <span class="experience__tag">React.js</span>
+    <span class="experience__tag">Node.js</span>
+    <span class="experience__tag">REST APIs</span>
+  </div>
+</div>
+
+
+
+        <div class="experience__card glass reveal">
+          <div class="experience__header">
+            <div class="experience__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+            </div>
+            <div>
+              <h3 class="experience__role">Web Development Intern</h3>
+              <p class="experience__company">SKIT Jaipur</p>
+            </div>
+            <span class="experience__duration">July 2024 – August 2024</span>
+          </div>
+          <p class="experience__description">
+            Completed a short-term in-house internship focused on learning HTML, CSS, and JavaScript. Gained hands-on experience in building responsive web interfaces and understanding the fundamentals of front-end development.
+          </p>
+          <div class="experience__tags">
+            <span class="experience__tag">HTML</span>
+            <span class="experience__tag">CSS</span>
+            <span class="experience__tag">JavaScript</span>
+            <span class="experience__tag">Responsive Design</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">My Work</span>
+          <h2 class="section__title">Projects</h2>
+          <div class="section__line"></div>
+        </div>
+        <div class="projects__grid">
+
+          <article class="project-card reveal">
+            <div class="project-card__image project-card__image--1">
+              <div class="project-card__overlay">
+                <span class="project-card__category">Full Stack</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Expense Tracker</h3>
+              <p class="project-card__description">
+                A full-stack expense management application with CRUD operations, category-based filtering, dashboard analytics, and REST API integration.
+              </p>
+              <div class="project-card__tech">
+                <span class="tech-badge">MongoDB</span>
+                <span class="tech-badge">Express.js</span>
+                <span class="tech-badge">React.js</span>
+                <span class="tech-badge">Node.js</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="https://github.com/Nirali200605/expense_tracker" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--outline">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  GitHub
+                </a>
+                <a href="https://expense-tracker-eight-rose-97.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--primary">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal--delay">
+            <div class="project-card__image project-card__image--2">
+              <div class="project-card__overlay">
+                <span class="project-card__category">Full Stack</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">HireBlind</h3>
+              <p class="project-card__description">
+                <p class="project-card__description">
+  An AI-powered blind recruitment platform currently under development. The project aims to reduce hiring bias through anonymous candidate screening, JWT-based authentication, resume parsing (PDF/DOCX), and intelligent recruitment workflows.
+</p>
+              </p>
+              <div class="project-card__tech">
+                <span class="tech-badge">React.js</span>
+                <span class="tech-badge">TypeScript</span>
+                <span class="tech-badge">FastAPI</span>
+                <span class="tech-badge">SQLite</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="https://github.com/Nirali200605/HireBlind" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--outline">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3 .405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  GitHub
+                </a>
+                <!-- <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--primary">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                  Live Demo
+                </a> -->
+                <div class="project-status">
+                  🚧 Currently In Development
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal--delay-2">
+            <div class="project-card__image project-card__image--3">
+              <div class="project-card__overlay">
+                <span class="project-card__category">Frontend</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Coffee Shop Website</h3>
+              <p class="project-card__description">
+                A responsive coffee shop website featuring an interactive UI, smooth animations, and a fully functional shopping cart interface.
+              </p>
+              <div class="project-card__tech">
+                <span class="tech-badge">HTML</span>
+                <span class="tech-badge">CSS</span>
+                <span class="tech-badge">JavaScript</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="https://github.com/Nirali200605/Coffee-Shop" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--outline">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3 .405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  GitHub
+                </a>
+                <a href="https://coffee-shop-eight-opal.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--primary">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="achievements section" id="achievements">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Milestones</span>
+          <h2 class="section__title">Achievements</h2>
+          <div class="section__line"></div>
+        </div>
+        <div class="achievements__grid">
+          <div class="achievement-card glass reveal">
+            <div class="achievement-card__icon achievement-card__icon--primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.657 2.686 3 6 3s6-1.343 6-3v-5"/></svg>
+            </div>
+            <h3 class="achievement-card__title">GATE 2026 Qualified</h3>
+            <p class="achievement-card__text">Qualified GATE 2026 in Computer Science &amp; Information Technology</p>
+          </div>
+          <div class="achievement-card glass reveal reveal--delay">
+            <div class="achievement-card__icon achievement-card__icon--accent">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 class="achievement-card__title"><span class="counter" data-target="250">0</span>+ DSA Problems</h3>
+            <p class="achievement-card__text">Solved 250+ data structures &amp; algorithms problems on LeetCode and GeeksforGeeks</p>
+          </div>
+          <div class="achievement-card glass reveal reveal--delay">
+            <div class="achievement-card__icon achievement-card__icon--primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28"><path d="M6 9H4.5a2.5 2.5 0 010-5C7 4 7 7 7 7"/><path d="M18 9h1.5a2.5 2.5 0 000-5C17 4 17 7 17 7"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20 17 22"/><path d="M18 2H6v7a6 6 0 0012 0V2z"/></svg>
+            </div>
+            <h3 class="achievement-card__title">Top 10 Finalist</h3>
+            <p class="achievement-card__text">InnovICIon Hackathon SKIT Jaipur 2025</p>
+          </div>
+          <!-- <div class="achievement-card glass reveal reveal--delay-2">
+            <div class="achievement-card__icon achievement-card__icon--accent">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3.5 1.5 8.5 1.5 12 0v-5"/></svg>
+            </div>
+            <h3 class="achievement-card__title">CGPA <span class="counter" data-target="9" data-decimal=".11">0</span></h3>
+            <p class="achievement-card__text">Maintaining excellent academic performance at SKIT Jaipur</p>
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+    <!-- Coding Profiles -->
+    <section class="profiles section" id="profiles">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Connect with me</span>
+          <h2 class="section__title">Coding Profiles</h2>
+          <div class="section__line"></div>
+        </div>
+        <div class="profiles__grid">
+
+          <a href="https://leetcode.com/Nirali20" target="_blank" rel="noopener noreferrer" class="profile-card glass reveal reveal--delay">
+            <div class="profile-card__icon profile-card__icon--leetcode">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662L2.856 12.74l.699-.685c.391-.39 1.024-.39 1.414 0l2.47 2.47 2.47-2.47c.391-.39 1.024-.39 1.414 0l.699.685-3.923 3.893zm3.79-10.607l-1.414 1.415-2.47-2.47-2.47 2.47-1.414-1.414 2.47-2.47-2.47-2.47 1.414-1.414 2.47 2.47 2.47-2.47 1.414 1.414-2.47 2.47 2.47 2.47z"/></svg>
+            </div>
+            <h3 class="profile-card__name">LeetCode</h3>
+            <p class="profile-card__handle">@nirali20</p>
+            <span class="profile-card__arrow">→</span>
+          </a>
+
+
+          <a href="https://www.geeksforgeeks.org/profile/b230xipk" target="_blank" rel="noopener noreferrer" class="profile-card glass reveal reveal--delay-2">
+            <div class="profile-card__icon profile-card__icon--gfg">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M8.471 2.005L2 8.475v7.05l6.471 6.47h7.058L22 15.525V8.475L15.529 2H8.471zm1.414 1.414h4.23l5.88 5.88v4.23l-5.88 5.88h-4.23l-5.88-5.88V9.299l5.88-5.88z"/><path d="M12 7.5a4.5 4.5 0 100 9 4.5 4.5 0 000-9zm0 1.5a3 3 0 110 6 3 3 0 010-6z"/></svg>
+            </div>
+            <h3 class="profile-card__name">GeeksforGeeks</h3>
+            <p class="profile-card__handle">@niralichipad</p>
+            <span class="profile-card__arrow">→</span>
+          </a>
+
+
+          <a href="https://codolio.com/profile/Nirali20"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="profile-card glass reveal">
+
+              <div class="profile-card__icon">
+                  🚀
+              </div>
+
+              <h3 class="profile-card__name">
+                  Codolio
+              </h3>
+
+              <p class="profile-card__handle">
+                  @Nirali20
+              </p>
+
+              <span class="profile-card__arrow">
+                  →
+              </span>
+            </a>
+
+          <a href="https://github.com/Nirali200605" target="_blank" rel="noopener noreferrer" class="profile-card glass reveal">
+            <div class="profile-card__icon profile-card__icon--github">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </div>
+            <h3 class="profile-card__name">GitHub</h3>
+            <p class="profile-card__handle">@Nirali200605</p>
+            <span class="profile-card__arrow">→</span>
+          </a>
+    
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Let's Connect</span>
+          <h2 class="section__title">Contact Me</h2>
+          <div class="section__line"></div>
+        </div>
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <p class="contact__intro">
+              I'm currently open to SDE internships and full-time opportunities. Feel free to reach out — I'd love to connect!
+            </p>
+            <div class="contact__details">
+              <div class="contact__item glass">
+                <div class="contact__item-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <span class="contact__item-label">Email</span>
+                  <a href="mailto:jainnirali88@gmail.com" class="contact__item-value">jainnirali88@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact__item glass">
+                <div class="contact__item-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                </div>
+                <div>
+                  <span class="contact__item-label">Phone</span>
+                  <a href="tel:+918306165920" class="contact__item-value">+91 8306165920</a>
+                </div>
+              </div>
+              <div class="contact__item glass">
+                <div class="contact__item-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <span class="contact__item-label">Location</span>
+                  <span class="contact__item-value">Jaipur, Rajasthan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form class="contact__form glass reveal reveal--delay" id="contactForm" novalidate>
+            <div class="form__group">
+              <label for="name" class="form__label">Name</label>
+              <input type="text" id="name" name="name" class="form__input" placeholder="Your name" required>
+              <span class="form__error" id="nameError"></span>
+            </div>
+            <div class="form__group">
+              <label for="email" class="form__label">Email</label>
+              <input type="email" id="email" name="email" class="form__input" placeholder="your@email.com" required>
+              <span class="form__error" id="emailError"></span>
+            </div>
+            <div class="form__group">
+              <label for="message" class="form__label">Message</label>
+              <textarea id="message" name="message" class="form__input form__textarea" placeholder="Your message..." rows="5" required></textarea>
+              <span class="form__error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              <span class="btn__text">Send Message</span>
+              <span class="btn__loader" hidden></span>
+            </button>
+            <p class="form__success" id="formSuccess" hidden>Thank you! Your message has been sent successfully.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__brand">
+        <a href="#home" class="footer__logo">
+          <span class="nav__logo-bracket">&lt;</span>NC<span class="nav__logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer__tagline">Building scalable web applications &amp; solving algorithmic problems.</p>
+      </div>
+      <div class="footer__social">
+        <a href="https://github.com/Nirali200605" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/nirali-chipad" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.126 0 2.065 2.065 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://leetcode.com/Nirali20" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LeetCode">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662L2.856 12.74l.699-.685c.391-.39 1.024-.39 1.414 0l2.47 2.47 2.47-2.47c.391-.39 1.024-.39 1.414 0l.699.685-3.923 3.893zm3.79-10.607l-1.414 1.415-2.47-2.47-2.47 2.47-1.414-1.414 2.47-2.47-2.47-2.47 1.414-1.414 2.47 2.47 2.47-2.47 1.414 1.414-2.47 2.47 2.47 2.47z"/></svg>
+        </a>
+      </div>
+      <p class="footer__copyright">&copy; 2026 Nirali Chipad. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="22" height="22"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
